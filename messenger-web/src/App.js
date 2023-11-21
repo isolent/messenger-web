@@ -10,7 +10,7 @@ const App = () => {
     // Fetch chats from your API
     const fetchChats = async () => {
       try {
-        const response = await fetch('your-api-endpoint/chats');
+        const response = await fetch('api/chats');
         const data = await response.json();
         setChats(data);
       } catch (error) {

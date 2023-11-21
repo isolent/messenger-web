@@ -19,7 +19,7 @@ const Chat = ({ chatId }) => {
     const fetchMessages = async () => {
       if (chatId) {
         try {
-          const response = await fetch(`your-api-endpoint/chats/${chatId}/messages`);
+          const response = await fetch(`api/chats/${chatId}/messages`);
           const data = await response.json();
           setMessages(data);
         } catch (error) {
