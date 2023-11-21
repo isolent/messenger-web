@@ -9,7 +9,7 @@ const Chat = ({ chatId }) => {
 
     setMessages((prevMessages) => [
       ...prevMessages,
-      { id: prevMessages.length, text: message, sender: 'User' }, // Replace with user authentication logic
+      { id: prevMessages.length, text: message, sender: 'User' }, 
     ]);
 
     setMessage('');
